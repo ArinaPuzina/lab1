@@ -3,6 +3,20 @@
 #include <map>
 using namespace std;
 
+void rectangle(){
+    double a,b;
+    cout<<"Enter the sides of the rectangle separated by a space: ";
+    cin >> a >> b; cout << endl;
+    if ((a <=0) || (b<=0)) {
+        cout << "There is no such rectangle" << endl;
+    }
+    else {
+        cout<< "Perimeter = " << 2*(a+b) << endl;
+        cout<< "Square = " << a*b << endl;
+        cout<< "Diagonal = " << sqrt(a*a + b*b) << endl;
+    }
+}
+
 map<string,double> trapeze() {
 	cout << "Enter trapezoid bases :";
 	double a, b;
@@ -25,7 +39,9 @@ map<string,double> trapeze() {
 
 }
 int main() {
+    cout << "-------------MENU-------------" << endl;
 	cout << "1 - trapeze " << endl;
+	cout << "2 - rectangle " << endl;
 	cout << "Enter the number of figure: ";
 	int choice;
 	cin >> choice;
@@ -38,8 +54,13 @@ int main() {
 		cout << endl;
 	}
 	break; }
-	default: 
+	case 2:
+    {
+        rectangle();
+        break;
+    }
+	default:
 		cout << "Sorry, there is no such option yet.";
 	}
-	
+
 }
