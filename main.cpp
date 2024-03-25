@@ -29,16 +29,16 @@ void triangle()
 	}
 	else
 	{
-		cout << "Perimeter = " << s1 + s2 + s3 << endl; // периметр
+		cout << "Perimeter = " << s1 + s2 + s3 << endl; 
 		double ppm = (s1 + s2 + s3) / 2;
-		cout << "Square = " << sqrt(ppm * (ppm - s1) * (ppm - s2) * (ppm - s3)) << endl; //площадь
+		cout << "Square = " << sqrt(ppm * (ppm - s1) * (ppm - s2) * (ppm - s3)) << endl; 
 		if ((s1 == s2) or (s2 == s3) or (s1 == s3))
 		{
-			cout << "The triangle is isosceles" << endl; // р/н
+			cout << "The triangle is isosceles" << endl; 
 		}
 		else
 		{
-			cout << "The triangle is not isosceles" << endl; // не р/н
+			cout << "The triangle is not isosceles" << endl; 
 		}
 	}
 }
