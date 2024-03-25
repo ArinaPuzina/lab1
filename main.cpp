@@ -15,7 +15,6 @@ void rectangle(){
         cout<< "Square = " << a*b << endl;
         cout<< "Diagonal = " << sqrt(a*a + b*b) << endl;
     }
-//testing
 }
 
 void triangle()
@@ -51,7 +50,6 @@ map<string,double> trapeze() {
 	cout << "Enter other sides of trapezoid :";
 	double c, d;
 	cin >> c >> d;
-//test2
 	cout<<endl;
 
 	int p = (a + b + c + d) / 2;
