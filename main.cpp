@@ -51,6 +51,7 @@ map<string,double> trapeze() {
 	cout << "Enter other sides of trapezoid :";
 	double c, d;
 	cin >> c >> d;
+//test2
 	cout<<endl;
 
 	int p = (a + b + c + d) / 2;
