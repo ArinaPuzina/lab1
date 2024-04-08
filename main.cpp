@@ -3,7 +3,7 @@
 #include <map>
 using namespace std;
 
-void rectangle(){
+void rectangle(){ //test 08.04.2024
     double a,b;
     cout<<"Enter the sides of the rectangle separated by a space: ";
     cin >> a >> b; cout << endl;
