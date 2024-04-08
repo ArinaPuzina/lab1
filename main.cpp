@@ -3,47 +3,8 @@
 #include <map>
 using namespace std;
 
-void rectangle(){ //test 08.04.2024
-    double a,b;
-    cout<<"Enter the sides of the rectangle separated by a space: ";
-    cin >> a >> b; cout << endl;
-    if ((a <=0) || (b<=0)) {
-        cout << "There is no such rectangle" << endl;
-    }
-    else {
-        cout<< "Perimeter = " << 2*(a+b) << endl;
-        cout<< "Square = " << a*b << endl;
-        cout<< "Diagonal = " << sqrt(a*a + b*b) << endl;
-    }
-}
 
-void triangle()
-{
-	double s1, s2, s3;
-	cout << "Enter the 3 sides of the triangle" << endl;
-	cin >> s1 >> s2 >> s3;
-	double MaxTr = (s1 <= s2 && s3 <= s2) ? s2 : (s2 <= s1 && s3 <= s1) ? s1 : s3;
-	if (MaxTr * 2 >= s1 + s2 + s3)
-	{
-		cout << "There is no such triangle" << endl;
-	}
-	else
-	{
-		cout << "Perimeter = " << s1 + s2 + s3 << endl;
-		double ppm = (s1 + s2 + s3) / 2;
-		cout << "Square = " << sqrt(ppm * (ppm - s1) * (ppm - s2) * (ppm - s3)) << endl;
-		if ((s1 == s2) or (s2 == s3) or (s1 == s3))
-		{
-			cout << "The triangle is isosceles" << endl;
-		}
-		else
-		{
-			cout << "The triangle is not isosceles" << endl;
-		}
-	}
-}
-
-map<string,double> trapeze() {
+map<string,double> trapeze() { //ab
 	cout << "Enter trapezoid bases :";
 	double a, b;
 	cin >> a >> b;
