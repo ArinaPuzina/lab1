@@ -3,6 +3,7 @@
 #include <map>
 using namespace std;
 
+
 map<string,double> trapeze() { //ab
 	cout << "Enter trapezoid bases :";
 	double a, b;
@@ -25,7 +26,10 @@ map<string,double> trapeze() { //ab
 
 }
 int main() {
+    cout << "-------------MENU-------------" << endl;
 	cout << "1 - trapeze " << endl;
+	cout << "2 - rectangle " << endl;
+	cout << "3 - triangle" << endl;
 	cout << "Enter the number of figure: ";
 	int choice;
 	cin >> choice;
@@ -38,8 +42,18 @@ int main() {
 		cout << endl;
 	}
 	break; }
-	default: 
+	case 2:
+    {
+        rectangle();
+        break;
+    }
+	case 3:
+	{
+		triangle();
+		break;
+	}
+	default:
 		cout << "Sorry, there is no such option yet.";
 	}
-	
+
 }
