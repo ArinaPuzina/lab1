@@ -3,7 +3,7 @@
 #include <map>
 using namespace std;
 
-map<string,double> trapeze() {
+map<string,double> trapeze() { //ab
 	cout << "Enter trapezoid bases :";
 	double a, b;
 	cin >> a >> b;
